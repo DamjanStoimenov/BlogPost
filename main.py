@@ -274,7 +274,6 @@ def about():
 
 
 @app.route("/contact", methods=["GET", "POST"])
-@login_required
 def contact():
     if request.method == "POST":
         data = request.form
