@@ -14,10 +14,6 @@ from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 import smtplib
 import os
 
-MAIL_ADDRESS = os.getenv("EMAIL_KEY")
-MAIL_APP_PW = os.getenv("PASSWORD_KEY")
-
-
 '''
 Make sure the required packages are installed: 
 Open the Terminal in PyCharm (bottom left). 
@@ -30,6 +26,9 @@ pip3 install -r requirements.txt
 
 This will install the packages from the requirements.txt for this project.
 '''
+
+MAIL_ADDRESS = os.getenv("EMAIL_KEY")
+MAIL_APP_PW = os.getenv("PASSWORD_KEY")
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY')
