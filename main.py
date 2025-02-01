@@ -12,13 +12,11 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 # Optional: add contact me email functionality (Day 60)
 import smtplib
-from dotenv import load_dotenv
 import os
 
 MAIL_ADDRESS = os.getenv("EMAIL_KEY")
 MAIL_APP_PW = os.getenv("PASSWORD_KEY")
 
-load_dotenv()
 
 '''
 Make sure the required packages are installed: 
